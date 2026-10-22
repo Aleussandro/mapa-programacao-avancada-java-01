@@ -29,8 +29,8 @@ public class Funcionario {
     }
 
     public void calcularBonus() {
-        double bonus = 10.0;
-        this.salario = salario * (bonus / 100);
+        double bonus = salario * 0.1;
+        System.out.println(" Valor do bônus do funcionario: " + bonus);
     }
 
 }

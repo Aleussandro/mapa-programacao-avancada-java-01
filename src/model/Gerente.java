@@ -8,7 +8,7 @@ public class Gerente extends Funcionario {
 
     @Override
     public void calcularBonus() {
-        double bonus = 20.0;
-        this.salario = salario * (bonus / 100);
+        double bonus = salario * 0.2;
+        System.out.println(" Valor do bonus do gerente: " + bonus);
     }
 }

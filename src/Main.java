@@ -45,12 +45,13 @@ public class Main {
         Funcionario f1 = new Funcionario("Lucas", 1820.00);
         System.out.println(" Salário do funcionário: " + f1.getSalario());
         f1.calcularBonus();
-        System.out.println(" O salário do funcionário com bônus é: " + f1.getSalario() + "\n");
+
+        System.out.println(" ");
 
         Gerente g1 = new Gerente("Manoel", 1820.00);
         System.out.println(" Salário do gerente: " + g1.getSalario());
         g1.calcularBonus();
-        System.out.println(" O salário do gerente com bônus é: " + g1.getSalario() + "\n");
+
 
         // EXERCICIO 6
         System.out.println("\n*===== Exercício 6 =====*");
