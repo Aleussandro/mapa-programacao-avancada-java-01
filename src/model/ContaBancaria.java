@@ -17,14 +17,18 @@ public class ContaBancaria {
         this.titular = titular;
     }
 
-    public double depositar(double saldo) {
-        this.saldo += saldo;
-        return saldo;
+    public void depositar(double valor) {
+        if (valor >= 0) {
+            this.saldo += valor;
+        }
     }
 
-    public double sacar(double saldo) {
-        this.saldo -= saldo;
-        return saldo;
+    public void sacar(double valor) {
+        if (valor > 0 && valor <= this.saldo){
+            this.saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente.");
+        }
     }
 
     public void exibirSaldo() {

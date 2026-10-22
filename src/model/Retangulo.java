@@ -2,17 +2,17 @@ package model;
 
 public class Retangulo {
 
-    private Double altura;
-    private Double largura;
+    private double altura;
+    private double largura;
 
     public Retangulo() { }
 
-    public Retangulo(Double altura, Double largura) {
+    public Retangulo(double altura, double largura) {
         this.altura = altura;
         this.largura = largura;
     }
 
-    public Double calcularArea() {
+    public double calcularArea() {
         return largura * altura;
     }
 }
